@@ -9,9 +9,10 @@ def Euclidean_distance(point1, point2,class_value):
 def main():
     x = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12]
     y = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]
+    z = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]
     classes = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1]
 
-    data = list(zip(x, y))
+    data = list(zip(x, y,z))
     print(data)
     print(classes)
 
@@ -20,7 +21,7 @@ def main():
     
     model = KNeighborsClassifier(n_neighbors=7)
     model.fit(data, classes)
-    print(model.predict([[8, 21]]))
+    print(model.predict([[8, 21,11]]))
     
 if __name__=="__main__":
     main()
