@@ -35,6 +35,8 @@ def main():
     
     print(word2count)
 
+    word2count = dict(sorted(word2count.items(), key=lambda x: x[1],reverse=True))
+    print("word2count:",word2count)
     k = word2count.keys() # a list of the dict keys
     v = word2count.values() # a list of the dict values
 
