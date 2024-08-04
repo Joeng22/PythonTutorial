@@ -18,8 +18,8 @@ def uppercase_decorator(function):
 def say_hi():
     return 'hello world'
 
-decorate = uppercase_decorator(say_hi)
-print("Normal function call ",decorate())
+#decorate = uppercase_decorator(say_hi)
+#print("Normal function call ",decorate())
 
 
 print("Using decoratore @:",say_hi())
