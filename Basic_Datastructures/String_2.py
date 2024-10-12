@@ -40,6 +40,16 @@ def string_func():
 
     print(str2)
 
+def CharacterToUpper(str1,ch):
+
+    str6 = ""
+    for each in str1:
+        if(each == ch):
+            str6 = str6 + each.upper()
+        else:
+            str6 = str6 + each
+
+    return str6
 
 def case_func():
     str1 = "Hello world"
@@ -54,6 +64,9 @@ def case_func():
     print(str3)    
     print(str4)
     print(str5)
+
+    print(CharacterToUpper(str3,"o"))
+
 if __name__=="__main__":
     #main()
     #range_func()
